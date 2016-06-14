@@ -174,3 +174,24 @@ If `value` contains any whitespaces, CAST requires the command line to include q
  - [`TSmc_first`](#TSmc_first)&emsp;[`0`]&emsp;(`0` - no, `1` - yes)<br />*Perform `TSdivers_iter` MCM steps before TS starts*
  
  - [`TSdivers_limit`](#TSdivers_limit)&emsp;[`50`]&emsp;(`0` < integral value)<br />*Maximum number of diversifications*
+
+#### NEB and Pathopt double-ended reaction path search ####
+ - [`NEB-PATHOPT-FINAL`](#NEB-PATHOPT FINAL) declaration of second input structure
+ - [`NEB-PATHOPT-IMAGES`](#NEB-PATHOPT IMAGES)&emsp;[`12`]&emsp;(`3` < integral value)<br />*Number of images generated which define the reaction pathway by inlcuding start and final structure*
+ - [`NEB-PATHOPT-SPRING`](#NEB-PATHOPT SPRING)&emsp;[`1.0`]&emsp;(`0.0` < integral value)<br />*Spring constant within NEB calculation in kcal/molA^2*
+ - [`NEB-PATHOPT-CLIMBING`](#NEB-PATHOPT CLIMBING)&emsp;[`1`]&emsp;(`0` - no, `1` yes)<br />*Using the Climbing Image NEB variant*
+ - [`NEB-PATHOPT-TEMP`](#NEB-PATHOPT TEMP)&emsp;[`298.15`]&emsp;( `0.0` < integral value)<br />*Temperature settings one the one side for temperature dependent NEB calculations and for the MCM procedure if a Pathopt simulation is carried out*
+ - [`NEB-PATHOPT-ITER`](#NEB-PATHOPT ITER)&emsp;[`100`]&emsp;( `0` < integral value)<br />*Monte Carlo steps in Pathopt simulation*
+ - [`NEB-PATHOPT-GLOBITER`](#NEB-PATHOPT GLOBITER)&emsp;[`1`]&emsp;( `0` < integral value)<br />*number of global iterations within Pathopt*
+ - [`NEB-PATHOPT-MAXFLUX`](#NEB-PATHOPT ITER)&emsp;[`0`]&emsp;( `0` - no, `1` yes)<br />*Perform temperature dependent NEB simulation - MaxFlux methodology*
+ - [`NEB-PATHOPT-MODE`](#NEB-PATHOPT MODE)&emsp;[`PROJECTION`]&emsp;( `PROJECTION/BIASED`)<br />*Perform Pathopt via projection scheme or using a biased gradient optimizaiton*
+ - [`NEB-PATHOPT-BIASCONSTANT`](#NEB-PATHOPT BIASCONSTANT)&emsp;[`0.1`]&emsp;( `0.0` < integral value)<br />*bias constant for biased search strategy*
+ - [`NEB-PATHOPT-MAXVAR`](#NEB-PATHOPT MAXVAR)&emsp;[`3.0`]&emsp;( `0.0` < integral value)<br />*maximum allowed displacement in cartesian coordinates allowed for accepted structures in Monte Carlo simulation*
+ - [`NEB-PATHOPT-STEPSIZE`](#NEB-PATHOPT ITER)&emsp;[`0.5`]&emsp;( `0.0` < integral value)<br />*stepsize for MCM random step*
+ - [`NEB-PATHOPT-ENERGY_RANGE`](#NEB-PATHOPT ENERGY_RANGE)&emsp;[`20.0`]&emsp;( `0.0` < integral value)<br />*maximum allowed energy difference with respect to starting structure*
+ - [`NEB-PATHOPT-MIXMOVE`](#NEB-PATHOPT MIXMOVE)&emsp;[`0`]&emsp;( `0` - no, `1` yes)<br />*Perform random dihedral movement  perpendicular to connecting band within MCM*
+ - [`NEB-PATHOPT-CONSTRAINT_GLOBAL`](#NEB-PATHOPT CONSTRAINT_GLOBAL)&emsp;[`0`]&emsp;( `0` - no, `1` yes)<br />*Perform stanndard MCM (see global optimization options) simulation starting from NEB structures by fixing the internals which change the most*
+ - [`NEB-PATHOPT-CONSTRAINT_NUMBER_DIHEDRALS`](#NEB-PATHOPT CONSTRAINT_NUMBER_DIHEDRALS)&emsp;[`1`]&emsp;( `0` < integral value)<br/>*number of dihedrals which should be fixed in standard MCM simulation starting from NEB structures*
+ - [`NEB-PATHOPT-IDPP`](#NEB-PATHOPT MIXMOVE)&emsp;[`0`]&emsp;( `0` - no, `1` yes)<br />*Using the Image Dependent Pair Potential within NEB*
+ - [`NEB-PATHOPT-INT_PATH`](#NEB-PATHOPT INT_PATH)&emsp;[`0`]&emsp;( `0` - no, `1` yes)<br />*using interpolation based gradient maximized local opimization based path method - whereas a spline interpolation is used  between linear built structures to generate initial path*
+ - [`NEB-PATHOPT-INT_IT`](#NEB-PATHOPT MIXMOVE)&emsp;[`0.5`]&emsp;( `0` < integral value)<br />*step size within spline interpolation*
