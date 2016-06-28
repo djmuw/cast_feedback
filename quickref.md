@@ -177,7 +177,7 @@ If `value` contains any whitespaces, CAST requires the command line to include q
 
 #### NEB and Pathopt double-ended reaction path search ####
  - [`NEB-PATHOPT-FINAL`](#NEB-PATHOPT FINAL) declaration of second input structure
- - [`NEB-PATHOPT-IMAGES`](#NEB-PATHOPT IMAGES)&emsp;[`12`]&emsp;(`3` < integral value)<br />*Number of images generated which define the reaction pathway by inlcuding start and final structure*
+ - [`NEB-PATHOPT-IMAGES`](#NEB-PATHOPT IMAGES)&emsp;[`12`]&emsp;(`3` < integral value)<br />*Number of images generated which define the reaction pathway by including start and final structure*
  - [`NEB-PATHOPT-SPRING`](#NEB-PATHOPT SPRING)&emsp;[`1.0`]&emsp;(`0.0` < integral value)<br />*Spring constant within NEB calculation in kcal/molA^2*
  - [`NEB-PATHOPT-CLIMBING`](#NEB-PATHOPT CLIMBING)&emsp;[`1`]&emsp;(`0` - no, `1` yes)<br />*Using the Climbing Image NEB variant*
  - [`NEB-PATHOPT-TEMP`](#NEB-PATHOPT TEMP)&emsp;[`298.15`]&emsp;( `0.0` < integral value)<br />*Temperature settings one the one side for temperature dependent NEB calculations and for the MCM procedure if a Pathopt simulation is carried out*
